@@ -49,6 +49,12 @@ async function main() {
       } else {
 
         alert(code);
+          for (let i = 0;i < document.getElementsByClassName("sc-eDWCr iVNPcC").length;i++){
+              item = document.getElementsByClassName("sc-eDWCr iVNPcC")[i];
+              if (item.getAttribute("placeholder") == "Game Code"){
+                  item.setAttribute("value", code);
+              }
+          }
         break;
 
       }
